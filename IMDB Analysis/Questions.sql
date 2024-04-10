@@ -70,6 +70,11 @@ Output format for the second part of the question:
 +---------------+-------------------+---------------------+*/
 
 
+
+
+
+
+
 -- Segment 2:
 
 
@@ -148,6 +153,11 @@ Output format for the second part of the question:
 
 -- Q17. Do German movies get more votes than Italian movies? 
 -- Hint: Here you have to find the total number of votes for both German and Italian movies.
+
+
+
+
+
 
 
 -- Segment 3:
@@ -238,6 +248,10 @@ Output format for the second part of the question:
 			Rating between 5 and 7: One-time-watch movies
 			Rating < 5: Flop movies
 --------------------------------------------------------------------------------------------*/
+
+
+
+
 
 
 -- Segment 4:
