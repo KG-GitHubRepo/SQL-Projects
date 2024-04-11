@@ -46,5 +46,6 @@ In 2015-01-04, the temperature was higher than the previous day (20 -> 30).
 CODE:
 
 select id from (
-select *, lag(recorddate) over() as prev_date, lag(temperature) over() as prev_temp from weather) as new
-where datediff(prev_date, recorddate) and temperature> prev_temp
+select *, lag(recorddate) over( order by recorddate) as prev_date, 
+lag(temperature) over( order by recorddate) as prev_temp from weather) as new
+where datediff( recorddate, prev_date)=1 and temperature> prev_temp
