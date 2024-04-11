@@ -67,4 +67,5 @@ CODE:
 
 select project_id , round(sum(experience_years)/count(employee_id),2) as average_years from project
 join employee using(employee_id)
+where experience_years is not null
 group by 1
