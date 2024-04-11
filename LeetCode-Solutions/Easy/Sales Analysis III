@@ -68,8 +68,10 @@ We return only product 1 as it is the product that was only sold in the spring o
 
 CODE:
 
-select product_id, product_name from product
+select distinct product_id, product_name from product
+join sales using(product_id)
 where product_id not in(
 select product_id from product
 join sales using(product_id)
-where year(sale_date)=2019 and sale_date not between '2019-01-01' and '2019-03-31')
+where sale_date<'2019-01-01' or sale_date>'2019-03-31') 
+and sale_date between '2019-01-01' and '2019-03-31'
