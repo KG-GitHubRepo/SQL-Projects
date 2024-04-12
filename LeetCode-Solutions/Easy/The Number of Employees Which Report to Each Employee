@@ -73,3 +73,4 @@ from employees e
 join (select reports_to, count(reports_to) as reports_count, round(avg(age),0) as average_age 
 from employees group by 1) as new on new.reports_to=e.employee_id
 where employee_id in (select distinct reports_to from employees)
+order by 1
