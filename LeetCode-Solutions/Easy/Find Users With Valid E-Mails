@@ -54,5 +54,5 @@ The mail of user 7 starts with a period.
 
 CODE:
 
-{\color{red} select * from users
-{\color{red} where mail regexp ('^[A-Za-z][A-Za-z0-9_.-]*@leetcode\\.com$')
+select * from users
+where mail regexp ('^[A-Za-z][A-Za-z0-9_.-]*@leetcode\\.com$')
