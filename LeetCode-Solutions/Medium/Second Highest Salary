@@ -52,5 +52,5 @@ Output:
 CODE:
 
 select ifnull((select secondhighestsalary from 
-(select salary as secondhighestsalary, dense_rank() over(order by salary desc) as rn from employee) as new
+(select distinct(salary) as secondhighestsalary, dense_rank() over(order by salary desc) as rn from employee) as new
 where rn=2),null) as secondhighestsalary
