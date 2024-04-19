@@ -1,1 +1,28 @@
+There is a table with daily weather data over the last 6 months of 2020, including the maximum, minimum, and averages temperatures.
 
+Write a query that gives month, monthly maximum, monthly minimum, monthly average temperatures for the six months.
+
+**Note:** Round the average to the nearest integer
+
+### Schema
+Table: temperature_records
+Columns:
+1. record_date  varchar(10)  date of the record
+2. data_type  varchar(3)  type key ( 'min','max' or 'avg')
+3. date_value  int   value
+
+
+CODE:
+
+with t1 as (select month(record_date) m, round(avg(data_value),0) as a
+from temperature_records
+where data_type='avg'
+group by 1),
+t2 as
+(select month(record_date) m, max(data_value) as maximum,  min(data_value) as minimum
+from temperature_records
+group by month(record_date))
+
+
+select t2.m, maximum, minimum, a
+from t2 join t1 using(m)
