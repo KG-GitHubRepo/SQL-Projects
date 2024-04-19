@@ -1,0 +1,8 @@
+Given the product and invoice details for products at an online store, find all products that were not sold. For each such product, display its SKU and product name. 
+Order the result by SKU, ascending.
+
+CODE:
+
+SELECT sku, product_name from product
+where id not in (select distinct(product_id) from invoice_item)
+order by 1
