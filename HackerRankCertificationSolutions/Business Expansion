@@ -1,0 +1,23 @@
+As part of business expansion efforts at a company, your help is needed to find all pairs of customers and agents who have been in contact more than once.
+For each such pair, display the user_id, first_name, and last name, and the customer id, name, and the number of their contacts.
+Order the result by user id ascending.
+
+CODE:
+
+with t as (select user_account_id, customer_id, count(*) as c from contact
+group by 1,2
+having count(*)>1),
+user as
+(select distinct u.id as user_id, first_name, last_name
+ from user_account u
+join contact c on u.id= c.user_account_id
+where u.id in (select user_account_id from t)),
+cus AS
+(select distinct cus.id as cus_id, customer_name, c
+ from customer cus
+join contact c on cus.id= c.customer_id
+join t on cus.id=t.customer_id
+where cus.id in (select customer_id from t))
+
+
+select user_id, first_name, last_name, cus_id, customer_name, c from user,cus
