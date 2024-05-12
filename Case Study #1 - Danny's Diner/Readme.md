@@ -19,5 +19,19 @@ Danny has shared with you 3 key datasets for this case study:
 * members
 
 The entity relationship diagram and example data below.
-![image](https://github.com/KG-GitHubRepo/SQL-Projects/assets/95182287/c60a0c28-4c85-42bd-8bfa-d08253bfacf4)
+![image](https://github.com/KG-GitHubRepo/SQL-Projects/assets/95182287/b1d38439-1123-4993-9017-ad662cbc7f3b)
 
+## Case Study Questions
+
+Each of the following case study questions can be answered using SQL statement:
+
+1. What is the total amount each customer spent at the restaurant?
+2. How many days has each customer visited the restaurant?
+3. What was the first item from the menu purchased by each customer?
+4. What is the most purchased item on the menu and how many times was it purchased by all customers?
+5. Which item was the most popular for each customer?
+6. Which item was purchased first by the customer after they became a member?
+7. Which item was purchased just before the customer became a member?
+8. What is the total items and amount spent for each member before they became a member?
+9. If each $1 spent equates to 10 points and sushi has a 2x points multiplier - how many points would each customer have?
+10. In the first week after a customer joins the program (including their join date) they earn 2x points on all items, not just sushi - how many points do customer A and B have at the end of January?
