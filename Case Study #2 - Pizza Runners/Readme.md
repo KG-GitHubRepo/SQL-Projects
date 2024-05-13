@@ -1,5 +1,7 @@
 # Case Study #2 - Pizza Runner
 
+Note: All source material and respected credit is from: (https://8weeksqlchallenge.com/)
+
 ## Introduction
 Did you know that over 115 million kilograms of pizza is consumed daily worldwide??? (Well according to Wikipedia anyway…)
 
