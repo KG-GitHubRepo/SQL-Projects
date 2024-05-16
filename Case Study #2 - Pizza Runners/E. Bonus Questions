@@ -1,0 +1,22 @@
+Q - If Danny wants to expand his range of pizzas - how would this impact the existing data design? Write an INSERT statement to demonstrate what would happen if a new Supreme pizza with all the toppings was added to the Pizza Runner menu?
+
+To accommodate a new pizza type such as the "Supreme" pizza, the existing data design would need to include entries for this new pizza in the relevant tables: pizza_names, pizza_recipes, and potentially any other tables that reference pizza IDs.
+
+## Step-by-step Explanation:
+
+1. Add the new pizza to the pizza_names table:
+INSERT INTO pizza_names (pizza_id, pizza_name)
+VALUES (3, 'Supreme');
+
+2. Add the recipe for the new pizza to the pizza_recipes table:
+<- Assuming "all the toppings" -> 
+INSERT INTO pizza_recipes (pizza_id, toppings)
+VALUES (3, '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12');
+
+These changes allow the new pizza to be part of the menu and can be referenced in future customer orders. If additional new pizzas are introduced, similar steps would be followed to ensure they are correctly represented in the database schema.
+
+## Summary
+* The new pizza type will add rows to pizza_names and pizza_recipes.
+* Existing data and schema remain unchanged.
+* Future orders can reference the new pizza, requiring potential updates in queries.
+* Testing is necessary to ensure seamless integration of the new pizza type into the existing system.
