@@ -2,6 +2,8 @@
 
 use pizza_runner;
 
+
+
 -- Q1 What are the standard ingredients for each pizza?
 with CTE as (
 WITH RECURSIVE topping_split AS (
@@ -30,6 +32,10 @@ select pizza_id, group_concat(topping_name separator ',') as ingredients from ct
 join pizza_toppings on topping=topping_id
 group by 1;
 
+
+
+
+
 -- Q2 What was the most commonly added extra?
 with recursive extra_added AS (
 select pizza_id, trim(substring_index(extras, ',',1)) as extra, 
@@ -50,6 +56,10 @@ where extra REGEXP '^-?[0-9]+$'
 group by 1,3
 order by 2 desc limit 1;
 
+
+
+
+
 -- Q3  What was the most common exclusion?
 with recursive excluded AS (
 select pizza_id, trim(substring_index(exclusions, ',',1)) as exclusion, 
@@ -69,6 +79,9 @@ join pizza_toppings on exclusion=topping_id
 where exclusion REGEXP '^-?[0-9]+$'
 group by 1,3
 order by 2 desc limit 1;
+
+
+
 
 -- Q4  Generate an order item for each record in the customers_orders table in the format of one of the following:
 -- Meat Lovers
@@ -111,6 +124,9 @@ when exclusion_name = '' and extra_name <> '' then concat_ws(' - ', pizza_name, 
 else concat_ws(' - ', pizza_name, exclusion_name, extra_name) end as topping_name
 from exclusion_extra
 join pizza_names using(pizza_id);
+
+
+
 
 
 -- Q5  Generate an alphabetically ordered comma separated ingredient list for each pizza order from the customer_orders table and add a 2x in front of any relevant ingredients
@@ -162,6 +178,10 @@ order by 1)
 select order_id , group_concat(ingredient separator ',') as ingredients from ingred
 join cte using(unique_id)
 group by unique_id, 1;
+
+
+
+
 
 
 -- Q6 What is the total quantity of each ingredient used in all delivered pizzas sorted by most frequent first?
