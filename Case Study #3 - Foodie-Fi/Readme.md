@@ -1,5 +1,5 @@
 # Case Study #3 - Foodie-Fi
-Note: All source material and respected credit is from: (https://8weeksqlchallenge.com/)
+Note: All source material is credited to and derived from the following source: (https://8weeksqlchallenge.com/)
 ![image](https://github.com/KG-GitHubRepo/SQL-Projects/assets/95182287/7fb70372-341c-491e-892c-ba467358a59b)
 
 ## Introduction
@@ -29,6 +29,9 @@ Customers can sign up to an initial 7 day free trial will automatically continue
 
 When customers cancel their Foodie-Fi service - they will have a churn plan record with a null price but their plan will continue until the end of the billing period.
 
+![image](https://github.com/KG-GitHubRepo/SQL-Projects/assets/95182287/6712e9c5-ed82-4c3a-b723-ae921b369039)
+
+
 ## Table 2: subscriptions
 Customer subscriptions show the exact date where their specific plan_id starts.
 
@@ -37,6 +40,9 @@ If customers downgrade from a pro plan or cancel their subscription - the higher
 When customers upgrade their account from a basic plan to a pro or annual pro plan - the higher plan will take effect straightaway.
 
 When customers churn - they will keep their access until the end of their current billing period but the start_date will be technically the day they decided to cancel their service.
+
+![image](https://github.com/KG-GitHubRepo/SQL-Projects/assets/95182287/91cd2b80-67c8-4480-a39c-b64d55a77b29)
+
 
 ## Case Study Questions
 This case study is split into an initial data understanding question before diving straight into data analysis questions before finishing with 1 single extension challenge.
@@ -69,6 +75,7 @@ The Foodie-Fi team wants you to create a new payments table for the year 2020 th
   * once a customer churns they will no longer make payments
     
 Example outputs for this table might look like the following:
+![image](https://github.com/KG-GitHubRepo/SQL-Projects/assets/95182287/d7752109-afd4-4bc4-bcc0-c27892a86baa)
 
 
 ### D. Outside The Box Questions
