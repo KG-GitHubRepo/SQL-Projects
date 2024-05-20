@@ -36,6 +36,7 @@ Customers are randomly distributed across the nodes according to their region - 
 This random distribution changes frequently to reduce the risk of hackers getting into Data Bank’s system and stealing customer’s money and data!
 
 Below is a sample of the top 10 rows of the table
+
 ![image](https://github.com/KG-GitHubRepo/SQL-Projects/assets/95182287/47020ba2-e539-4f7a-bdb6-829449af51b4)
 
 ### Table 3: Customer Transactions
