@@ -61,7 +61,7 @@ The following case study questions include some general data exploration analysi
 4. What is the closing balance for each customer at the end of the month?
 5. What is the percentage of customers who increase their closing balance by more than 5%?
 
-   
+<!--
 ### C. Data Allocation Challenge
 To test out a few different hypotheses - the Data Bank team wants to run an experiment where different groups of customers would be allocated data using 3 different options:
 
@@ -85,6 +85,6 @@ Special notes:
 
 Data Bank wants an initial calculation which does not allow for compounding interest, however they may also be interested in a daily compounding interest calculation so you can try to perform this calculation if you have the stamina!
 
-
+-->
 
 
