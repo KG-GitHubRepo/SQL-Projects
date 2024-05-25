@@ -51,7 +51,8 @@ In a single query, perform the following operations and generate a new table in 
   * Add a week_number as the second column for each week_date value, for example any value from the 1st of January to 7th of January will be 1, 8th to 14th will be 2 etc
   * Add a month_number with the calendar month for each week_date value as the 3rd column
   * Add a calendar_year column as the 4th column containing either 2018, 2019 or 2020 values
-  * Add a new column called age_band after the original segment column using the following mapping on the number inside the segment value
+  * Add a new column called age_band after the original segment column using the following mapping on the number inside the segment value:
+    
     ![image](https://github.com/KG-GitHubRepo/SQL-Projects/assets/95182287/6740e3b6-327c-4267-b2d4-ea9673c980ab)
     
 
