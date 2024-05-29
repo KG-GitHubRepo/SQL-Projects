@@ -1,6 +1,7 @@
 # Case Study #6 - Clique Bait
 
 ![image](https://github.com/KG-GitHubRepo/SQL-Projects/assets/95182287/26b43986-6993-4529-a72f-0d8a3c6c70b9)
+
 Note: All source material is credited to and derived from the following source: (https://8weeksqlchallenge.com/)
 
 ## Introduction
