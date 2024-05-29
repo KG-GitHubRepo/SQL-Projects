@@ -2,6 +2,8 @@
 
 ![image](https://github.com/KG-GitHubRepo/SQL-Projects/assets/95182287/9b1b2c61-b1b2-4a38-9a4f-4d110defc208)
 
+Note: All source material is credited to and derived from the following source: (https://8weeksqlchallenge.com/)
+
 ## Introduction
 
 Data Mart is Danny’s latest venture and after running international operations for his online supermarket that specialises in fresh produce - Danny is asking for your support to analyse his sales performance.
