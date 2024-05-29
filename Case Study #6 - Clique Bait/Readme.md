@@ -17,6 +17,7 @@ For this case study there is a total of 5 datasets which you will need to combin
 ### Users
 
 Customers who visit the Clique Bait website are tagged via their cookie_id.
+
 ![image](https://github.com/KG-GitHubRepo/SQL-Projects/assets/95182287/72efa7e7-400a-4820-bb5f-cced7e9a29a9)
 
 ### Events
